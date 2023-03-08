@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <title>Dr. GPS</title>
   <meta charset="utf-8">
@@ -8,7 +8,13 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
-    
+    body{
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
     /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
       margin-bottom: 0;
@@ -20,17 +26,14 @@
       background-color: #f2f2f2;
       padding: 25px;
     }
-    
-  .carousel-inner img {
-      width: 100%; /* Set width to 100% */
-      margin: auto;
-     
-      min-height:200px;
+  .carousel-inner{
+    height: 350px;
   }
-  img{
-    width: 100%;
-    height: 770px;
+  .carousel-inner img { 
+      margin: auto;     
+      min-height: 200px;
   }
+
   #logo{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 40px;
@@ -39,7 +42,126 @@
   }
   a{
     font-size: 24px;
+    font-weight: bolder;
   }
+  .whats{
+    height: 90px;
+    display: flex;
+    align-content: center;
+    justify-content: center;    
+  }
+  #abertura{
+    width: 100%;
+    height: 780px;
+  }
+
+  #row{
+    width: 100%;
+    height: 790px;
+    margin: 0;
+    padding: 0;    
+
+  }
+  #relogios{
+    width: 50%;
+    height: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;  
+    justify-content: center;
+  }
+  .text-relogio{
+    width: 100%;
+    height: 50%;   
+    display: flex;
+    justify-content: center;
+
+  }
+  .text-relogio p{
+    margin-top: 100px;
+    width: 80%;
+    font-size: larger;
+    font-weight: bolder;
+  }
+  #duplo{  
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;   
+
+}
+#bike{ 
+  width: 100%;
+  height: 50%;
+ 
+}
+.text-bike{
+  width: 100%;
+  height: 50%;   
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+.text-bike p{
+  margin-top: 25px;
+  width: 80%;
+  font-size: larger;
+  font-weight: bolder;
+ 
+}
+
+#gps{
+  width: 100%;
+  height: 50%;
+
+  
+}
+.text-gps{
+  width: 100%;
+  height: 50%;   
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.text-gps p{
+  margin-top: 25px;
+  width: 80%;
+  font-size: larger;
+  font-weight: bolder;
+}
+.img-switch{
+  width: 100%;
+  height: 50%;
+  margin: 0px 0px 0px 0px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.area-vendas{
+  width: 100%;
+  height: 780px;
+  background-color: black;
+  display: flex;
+
+}
+
+.sell{
+  width:25%;
+  height: 100px;
+} 
+.sell img{
+  width: 100%;
+}
+
+
+
 
   /* Hide the carousel text when the screen is less than 600 pixels wide */
   @media (max-width: 600px) {
@@ -47,7 +169,7 @@
       display: none; 
     }
     img{
-        height: 350px;
+        height: 80px;
     }
   }
   </style>
@@ -66,26 +188,39 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Sobre Nós</a></li>
-        <li><a href="#">Localização</a></li>
-        <li><a href="#">Contatos</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
+        <li><a href="#">Manutenção Especializada</a></li>
+        <li><a href="#">Quem Somos</a></li>
+        <li><a href="#">Produtos</a></li>      
     </div>
   </div>
+  <div class="abertura"><img id="abertura" src="/img/bkgimage.jpg" alt=""></div>
 </nav>
-<div class="img img-responsive"><img src="/img/bkgimage.jpg" alt=""></div>
+      <div class="row" id="row">
+        <div class="col-sm-4" id="relogios"> 
+          <div class="img-switch"><img src="/img/amazfit1.jpeg" alt=""></div>
+          <div class="text-relogio"><p>Manutenção para relógios Garmin e Amazfit agora disponível! Oferecemos reparos para problemas como bateria,
+             pulseira, tela, botões e serviços de limpeza e manutenção preventiva. Peças de alta qualidade e técnicos experientes. Entre em contato para agendar o serviço.</p></div>         
+        </div>
+        <div class="col-sm-8" id="duplo">
+        <div class="superior" id="bike"> <div class="img-switch"><img src="/img/bkesportiva1.jpeg" alt=""></div>
+        <div class="text-bike"><p>Manutenção para relógios Garmin e Amazfit agora disponível! Oferecemos reparos para problemas como bateria,
+           pulseira, tela, botões e serviços de limpeza e manutenção preventiva. Peças de alta qualidade e técnicos experientes. Entre em contato
+            para agendar o serviço.</p></div></div>
+
+        <div class="inferior" id="gps"> <div class="img-switch"><img src="/img/gps1.jpg" alt=""></div>
+        <div class="text-gps"><p>Manutenção para relógios Garmin e Amazfit agora disponível! Oferecemos reparos para problemas como bateria,
+               pulseira, tela, botões e serviços de limpeza e manutenção preventiva. Peças de alta qualidade e técnicos experientes. Entre em contato
+                para agendar o serviço.</p></div>         
+             </div>
+         </div>
+  </div>
+</div>
 
   
-<div class="container text-center">    
-  <h3>O que Nós fazemos</h3><br>
-  <div class="row">
-    <div class="col-sm-4">
-      <img src="/img/OqueFazemosImg.jpg" class="img-responsive" style="width:100%" alt="Image">
-      <p> <h3> <strong> REPARO DE CELULARES</h3></strong> <br>
+<div class="area-vendas">    
+ 
+    <div class="sell"><img src="/img/OqueFazemosImg.jpg" alt="Image">
+      <p> <h3> <strong> REPARO DE CELULARES</h3></strong> 
 Trabalhamos com as maiores marcas do mercado. Nossos técnicos estarão à disposição para ajudar com transparência e clareza.Seja qual for o seu problema, estaremos aqui para orientar.
 Lidamos com...
 
@@ -97,10 +232,10 @@ Lidamos com...
  trocas de botões,
  trocas de LCD e Touch
  e muito mais...</p>
-    </div><br>
-    <div class="col-sm-4"> 
-      <img src="/img/OqueFazemosImg2.jpg" class="img-responsive" style="width:100%; height:550px" alt="Image">
-      <p> <h3><strong>GPS</strong></h3><br>
+    </div>
+    <div class="sell"> 
+      <img src="/img/OqueFazemosImg2.jpg" alt="Image">
+      <p> <h3><strong>GPS</strong></h3>
 Nossa equipe possui especialistas em programação, eletrônica e uma década de experiência no reparo dos mais diversos tipos de GPS.
 Trabalhamos com todas as marcas.
 
@@ -113,68 +248,71 @@ radares
 trocas de telas e touchs quebrados 
 suportes veiculares e acessórios 
 e muito mais... </p>    
-    </div><br>
-       <div class="col-sm-4">
-      <img src="/img/OqueFazemosImg3.jpg" class="img-responsive" style="width:100%" alt="Image">
-      <p> <h3><strong> REPARO DE NOTEBOOK</strong></h3><br>
-Os laptops hoje são cada vez mais ferramentas de trabalho e indispensáveis. Para a Doutor GPS, agilidade e seriedade na resolução do problema é fundamental para acompanhar as exigências do mercado.
-Nossa assistência é especializada em reparos nos componentes internos e na solução de problemas de software que possam surgir.
-Resolvemos problemas de
-
- aparelhos que não ligam
- motherboards
- sistema de carregamento
- retificação de moldes
- formatação
- trocas de botões
- trocas de LCD e Touchpad
+    </div>
+    <div class="sell">
+      <img src="/img/OqueFazemosImg3.jpg" alt="Image">
+       <p><h3><strong> REPARO DE NOTEBOOK</strong></h3>
+            Os laptops hoje são cada vez mais ferramentas de trabalho e indispensáveis. Para a Doutor GPS, agilidade e seriedade na resolução
+             do problema é fundamental para acompanhar as exigências do mercado.
+            Nossa assistência é especializada em reparos nos componentes internos e na solução de problemas de software que possam surgir.
+            Resolvemos problemas de aparelhos que não ligam motherboards sistema de carregamento retificação de moldes formatação trocas de botões trocas de LCD e Touchpad
  e muito mais...</p>
-    </div>
-    <div class="col-sm-4">
-      <div class="well">
-       <p>Some text..</p>
-      </div>
-      <div class="well">
-       <p>Some text..</p>
-      </div>
-    </div>
-  </div>
-</div><br>
+    </div>   
+</div>
+
+
+    
+    
+      
+
+
+
+<div class="whats">
+    <button type="button" class="btn btn-success "><a href="https://wa.me/551233221782?text=Preciso%20do%20seu%20servi%C3%A7o">Fale Conosco</a></button>
+       </div>
+
+   
+  </div><br><br>
+
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <img src="https://placehold.it/1200x400?text=IMAGE" alt="Image">
-        <div class="carousel-caption">
-          <h3>Sell $</h3>
-          <p>Money Money.</p>
-        </div>      
-      </div>
-
-      <div class="item">
-        <img src="https://placehold.it/1200x400?text=Another Image Maybe" alt="Image">
-        <div class="carousel-caption">
-          <h3>More Sell $</h3>
-          <p>Lorem ipsum...</p>
-        </div>      
-      </div>
-    </div>
-
     <!-- Left and right controls -->
     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
       <span class="sr-only">Previous</span>
     </a>
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+    </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="/img/logoMotorola.png" alt="Image">
+        <div class="carousel-caption">          
+        </div>      
+      </div>
+      <div class="item">
+        <img src="/img/logoSamsung.png" alt="Image">
+        <div class="carousel-caption">          
+        </div>      
+      </div>
+      <div class="item">
+        <img src="/img/logoXiaomi.png" alt="Image">
+        <div class="carousel-caption">         
+        </div>      
+      </div>    
+      <div class="item">
+          <img src="/img/logoApple.png" alt="Image">
+          <div class="carousel-caption">             
+        </div>            
+      </div>
+    </div>
     <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
-    </a>
+    </a>       
+  </div>    
 </div>
 
 <footer class="container-fluid text-center">
