@@ -30,7 +30,8 @@
    #myNavbar a{             
          width: 100%;
          height: 100%; 
-         font-size: 40px; 
+         font-size: 30px; 
+         color: white;
            
     }   
     .titulo-session{
@@ -40,25 +41,33 @@
       justify-content: center;
       text-align: center;
       font-size: 60px;
-      color: cornflowerblue;
+      color:  white;
       text-shadow: 2px 2px #494545;
       font-family: Arial, Helvetica, sans-serif;
       font-weight: bolder;
       
     }
-    #manutencao{
+    #manutencao{       
       color: rgb(221, 193, 33);
-        font-size: 40px;
+      font-size: 40px;
     }
+    #manutencao img:hover{
+      transform: scale(1.1);
+      transition: 1s;
+
+    }
+    
     #descricao{
-      font-size: 26px;
-      color: white;
+      font-size: 20px;
+      color: rgb(196, 193, 193);
     }
    
     /* Add a gray background color and some padding to the footer */
     footer {
-      background-color: #f2f2f2;
+      background-color: #00000065;
       padding: 25px;
+      font-size: 30px;
+      color: white;
     }
 
  
@@ -90,14 +99,24 @@
     }   
   .espaco{
       width: 100%;
-      height: 30px;
+      height: 50px;
      background-color:black;
     }  
     #produto{
       margin: 40px 0px 60px 320px;
     }
-    
-
+    .sobre{
+      width: 100vw;
+      background-color: #494545;
+      color: #f2f2f2;
+      font-size: 50px;
+      padding: 300px 300px 300px 300px;
+      text-align: center;
+    }
+     #manutencao1{ 
+      background-color: aqua;  
+      justify-self: center;
+     }
    
 
 
@@ -141,9 +160,9 @@
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
           <li><a href="#manutencao">Manutenção Especializada</a></li>
-          <li><a href="#">Quem Somos</a></li>
+          <li><a href="#sobre">Quem Somos</a></li>
           <li><a href="#produtos">Produtos</a></li>  
-          <a href="https://wa.me/551233221782?text=Preciso%20do%20seu%20servi%C3%A7o" target="_blank"><button type="button"  class="btn btn-success">Fale Conosco </button></a>      
+          <a href="https://wa.me/551233221782?text=Preciso%20do%20seu%20servi%C3%A7o" target="_blank"><button type="button"  class="btn btn-success"><img src="/img/whatsapp.png" style="width: 30px;"> Fale Conosco </button></a>      
       </div>
     </div>
   </nav>
@@ -190,43 +209,44 @@
     </div>   <div class="espaco"></div>
  
   <section id="manutencao">
-    
-    <div class="container-fluid text-center">
-      <div class="titulo-session">Manutenções Especializadas</div><br>
-      <div class="espaco"></div>    
-      <div class="row">
-        <div class="col-sm-4" id="manutencao"> Relogios         
-          <img src="/img/img manutencao/manutenção1.png" class="img-responsive" style="width:100%" alt="Image">
-          <p id="descricao">A arte da manutenção em relógios esportivos, preservando a precisão e a durabilidade" <br>
+    <div class="titulo-session">Manutenções Especializadas</div><br>
+    <div class="container-fluid text-center" >    
+      <div class="espaco"></div>
+      <div class="col-sm-3" id="manutencao" style="margin-left:200px;"> Relogios         
+          <img src="/img/img manutencao/manutenção1.png" class="img-responsive" style="width:100%;" alt="Image">
+          <p id="descricao">A arte da manutenção em relógios esportivos, preservando a precisão e a durabilidade <br>
             A final de contas , você não pode perder o time da sua vida!</p>
         </div>
-        <div class="col-sm-4" id="manutencao"> GPS Marítimos          
-          <img src="/img/img manutencao/manutenção2.png" class="img-responsive" style="width:100%" alt="Image">
+        <div class="col-sm-3" id="manutencao" style="margin-left:100px;"> GPS Marítimos          
+          <img src="/img/img manutencao/manutenção2.png" class="img-responsive" style="width:100%;" alt="Image">
           <p id="descricao">Desbrave os mares com confiança! <br>
             Cuide de quem cuida de você e navegue mais longe!</p>
         </div>
-        <div class="col-sm-4" id="manutencao">  Computadores e Notebooks        
-          <img src="/img/img manutencao/manutenção3.png" class="img-responsive" style="width:100%" alt="Image">
+        <div class="col-sm-3" id="manutencao" style="margin-left:100px;">Computadores e Notebooks        
+          <img src="/img/img manutencao/manutenção3.png" class="img-responsive" style="width:100%;" alt="Image">
           <p id="descricao">Extraia o melhor do seu companheiro tecnológico <br>
             Seu computador sempre em forma!</p>
-        </div>        
+        </div>
       </div>
+      <div class="container-fluid text-center">
       <div class="espaco" > </div>
-      <div class="col-sm-4" id="manutencao"> Bikes         
-        <img src="/img/img manutencao/bike.jpg" class="img-responsive" style="width:100%" alt="Image">
+      <div class="col-sm-3" id="manutencao" style="margin-left:200px;"> Bikes         
+        <img src="/img/img manutencao/bike.jpg" class="img-responsive" style="width:100%;" alt="Image">
         <p id="descricao">Amor que não se perde! <br>
           Faça a manutenção no  GPS de sua bike e mantenha  viva a paixão pelo pedal!</p>
       </div>
-      <div class="col-sm-4" id="manutencao">   GPS Automotivos        
-        <img src="/img/img manutencao/bkgimage.jpg" class="img-responsive" style="width:100%" alt="Image">
+      <div class="col-sm-3" id="manutencao" style="margin-left:100px;">   GPS Automotivos        
+        <img src="/img/img manutencao/bkgimage.jpg" class="img-responsive" style="width:100%;" alt="Image">
         <p id="descricao"> Não espere se perder, viaje tranquilo!<br>
           A Dr GPS te mantém sempre na rota!</p>
       </div>      
-      <div class="col-sm-4" id="manutencao">   Celulares Smartphones       
-        <img src="/img/img manutencao/celulares.jpg" class="img-responsive" style="width:100%" alt="Image">
+      <div class="col-sm-3" id="manutencao" style="margin-left:100px;">   Celulares Smartphones       
+        <img src="/img/img manutencao/celulares.jpg" class="img-responsive" style="width:100%;" alt="Image">
         <p id="descricao">Os cuidados que seu celular merece, está nas mãos quem entende! <br>
           A Dr. GPS cuida daquilo que é importante para você!</p>          
-      </div>
+         </div>
+        </div>
+        <div class="espaco"></div>
     </section>
 
   <div class="espaco"></div>
@@ -285,12 +305,25 @@
   <div class="espaco"></div>
 </section>
 <section id="sobre">
-  <div class="sobre"></div>
-
-
+  <div class="sobre">Nossa história começou em 2008, um ano em que 
+    as tecnologias de GPS estavam se tornando 
+    acessíveis para o mercado brasileiro. <br> Com muitos 
+    aparelhos surgindo e poucos especialistas na área, 
+    a Doutor GPS foi fundada. <br>
+    Por muitos anos nossos técnicos expandiram seus 
+    conhecimentos e se especializaram na 
+    manutenção de Software e Hardware dos mais 
+    diversos tipos de tecnologias GPS, Relógios 
+    esportivos, Ciclo computadores e GPS Náuticos,
+    aeronáuticos e Automotivos,
+    principalmente em aparelhos da linha Garmin, 
+    Amazfit e Bryton. <br> Em nossa oficina técnica, temos 
+    a supervisão e acompanhamento de técnicos 
+    especializados em informática industrial, eletrônica 
+    e graduados em tecnologia.</div>
 </section>
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel">     
+<div id="myCarousel" class="carousel slide" style="background-color:#ffffff;" data-ride="carousel">     
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -301,22 +334,22 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="/img/img carrosel/img1 carrosel1 .jpg" style="width:100%; height:100px" alt="Image">
+      <img src="/img/img marcas/logoMotorola.jpg" style=" height:300px" alt="Image">
       <div class="carousel-caption">
       </div>
     </div>
     <div class="item">
-      <img src="/img/img carrosel/img2 carrosel1 .jpg" style="width:100%; height:100px" alt="Image">
+      <img src="/img/img marcas/logoApple.jpg" style=" height:300px" alt="Image">
       <div class="carousel-caption">
       </div>
     </div>
     <div class="item">
-      <img src="/img/img carrosel/img3 carrosel1 .jpg" style="width:100%; height:100px"  alt="Image">
+      <img src="/img/img marcas/logoSamsung.jpg" style=" height:300px"  alt="Image">
       <div class="carousel-caption">
       </div>
     </div>
     <div class="item">
-      <img src="/img/img carrosel/img4 carrosel1 .jpg" style="width:100%; height:100px" alt="Image">
+      <img src="/img/img marcas/logoXiaomi.jpg" style=" height:300px" alt="Image">
       <div class="carousel-caption">
       </div>          
     </div>     
@@ -336,16 +369,20 @@
 
 
   <footer class="container-fluid text-center">
-    <p>Telefone: 12 3322-1782
-      Email: contato@doutorgps.com.br
-      Whatsapp: 12 3322-1782
-      
-      Redes Sociais
-      Instagram: @drgpsoficial
-      Facebook: Dr.GPS_SJC
-      YouTube: DR.GPS_SJC
-      
-      Endereço: Av. Andrômeda 480, São José dos Campos - SP, 12230-001.</p>
+   <div class="col-sm-4">
+    <h2>Contatos</h2>
+      <h3>Telefone: 12 3322-1782</h3>
+      <h3>Email: <a href="mailto:contato@doutorgps.com.br" target="_blank"> contato@doutorgps.com.br</a></h3>
+      <h3>Whatsapp: <a href="https://wa.me/551233221782?text=Preciso%20do%20seu%20servi%C3%A7o" target="_blank">(12)3322-1782</a></h3>
+    </div> 
+      <div class="col-sm-4">  
+      <h2>Redes Sociais</h2>
+      <h3>Instagram: <a href="https://www.instagram.com/drgpsoficial/" target="_blank">@drgpsoficial</a></h3>
+      <h3>Facebook: <a href="https://web.facebook.com/Dr.gps.sjc" target="_blank"> Dr.GPS_SJC</a></h3>
+      <h3>YouTube: <a href="https://www.youtube.com/@DoctorGps" target="_blank"> DR.GPS_SJC</a></h3>
+      </div>
+      <h2>Endereço </h2>
+      <h3><a href="https://goo.gl/maps/Kf1Zj7q5FNmDcZrt7" target="_blank"> Av. Andrômeda 480, São José dos Campos - SP, 12230-001</a></h3>
   </footer>
 
 </body>
